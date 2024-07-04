@@ -50,7 +50,8 @@ class validateController extends ModulesFrontControllers
 
         $customer_obj->status = "enabled";
         $customer_obj->save();
-        
+        $_SESSION['data_login']['data_login_customer']['status'] = "enabled";
+
         $codes_obj->status = "validated";
         $codes_obj->save();
 
